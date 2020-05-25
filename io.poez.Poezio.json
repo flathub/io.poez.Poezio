@@ -210,6 +210,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "pip3 install --prefix=/app .",
+                "sed -i s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
             ],
             "sources": [

@@ -1,7 +1,7 @@
 {
     "app-id": "io.poez.Poezio",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "poezio",
     "finish-args": [
@@ -13,13 +13,13 @@
             "name": "python3-pyasn1",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app pyasn1-0.4.4-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app pyasn1-0.4.8-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d1/a1/7790cc85db38daa874f6a2e6308131b9953feb1367f2ae2d1123bb93a9f5/pyasn1-0.4.4-py2.py3-none-any.whl",
-                    "sha256": "b9d3abc5031e61927c82d4d96c1cec1e55676c1a991623cfed28faea73cdd7ca"
+                    "url": "https://files.pythonhosted.org/packages/62/1e/a94a8d635fa3ce4cfc7f506003548d0a2447ae76fd5ca53932970fe3053f/pyasn1-0.4.8-py2.py3-none-any.whl",
+                    "sha256": "39c7e2ec30515947ff4e87fb6f456dfc6e84857d34be479c9d4a4ba4bf46aa5d"
                 }
             ]
         },
@@ -27,13 +27,41 @@
             "name": "python3-pyasn1-modules",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app pyasn1_modules-0.2.2-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app pyasn1_modules-0.2.8-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/19/02/fa63f7ba30a0d7b925ca29d034510fc1ffde53264b71b4155022ddf3ab5d/pyasn1_modules-0.2.2-py2.py3-none-any.whl",
-                    "sha256": "a38a8811ea784c0136abfdba73963876328f66172db21a05a82f9515909bfb4e"
+                    "url": "https://files.pythonhosted.org/packages/95/de/214830a981892a3e286c3794f41ae67a4495df1108c3da8a9f62159b9a9d/pyasn1_modules-0.2.8-py2.py3-none-any.whl",
+                    "sha256": "a50b808ffeb97cb3601dd25981f6b016cbb3d31fbf57a8b8a87428e6158d0c74"
+                }
+            ]
+        },
+        {
+            "name": "python3-pycparser",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app pycparser-2.20-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl",
+                    "sha256": "7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"
+                }
+            ]
+        },
+        {
+            "name": "python3-cffi",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app cffi-1.14.0.tar.gz"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c/cffi-1.14.0.tar.gz",
+                    "sha256": "2d384f4a127a15ba701207f7639d94106693b6cd64173d6c8988e2c25f3ac2b6"
                 }
             ]
         },
@@ -41,13 +69,27 @@
             "name": "python3-pycares",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app pycares-2.3.0.tar.gz"
+                "pip3 install --prefix=/app pycares-3.1.1.tar.gz"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/89/5c/3a7e1a52d6abb52b9ca1a56d2df699936e89d8b98f75cfd60d03363e7c10/pycares-2.3.0.tar.gz",
-                    "sha256": "36f4c03df57c41a87eb3d642201684eb5a8bc194f4bafaa9f60ee6dc0aef8e40"
+                    "url": "https://files.pythonhosted.org/packages/4e/09/f49ef1c4b6a5ad50fc08a8acd015f1938594dd7a6b4a6a96d049d9bbec7d/pycares-3.1.1.tar.gz",
+                    "sha256": "18dfd4fd300f570d6c4536c1d987b7b7673b2a9d14346592c5d6ed716df0d104"
+                }
+            ]
+        },
+        {
+            "name": "python3-attrs",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app attrs-19.3.0-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl",
+                    "sha256": "08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"
                 }
             ]
         },
@@ -55,13 +97,97 @@
             "name": "python3-aiodns",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app aiodns-1.1.1-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app aiodns-2.0.0-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/bd/f5/b69cb930fd5ab0569396659afe3f3c0d37d4098e5d0ba6afdf6fd9388cb0/aiodns-1.1.1-py2.py3-none-any.whl",
-                    "sha256": "99d0652f2c02f73bfa646bf44af82705260a523014576647d7959e664830b26b"
+                    "url": "https://files.pythonhosted.org/packages/da/01/8f2d49b441573fd2478833bdba91cf0b853b4c750a1fbb9e98de1b94bb22/aiodns-2.0.0-py2.py3-none-any.whl",
+                    "sha256": "aaa5ac584f40fe778013df0aa6544bf157799bd3f608364b451840ed2c8688de"
+                }
+            ]
+        },
+        {
+            "name": "python3-chardet",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app chardet-3.0.4-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl",
+                    "sha256": "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
+                }
+            ]
+        },
+        {
+            "name": "python3-multidict",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app multidict-4.7.6-cp37-cp37m-manylinux1_x86_64.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/85/b8/a9fe777dab4c6aa067b516a34fe995213707e490ea1e72f823949a830a6a/multidict-4.7.6-cp37-cp37m-manylinux1_x86_64.whl",
+                    "sha256": "fcfbb44c59af3f8ea984de67ec7c306f618a3ec771c2843804069917a8f2e255"
+                }
+            ]
+        },
+        {
+            "name": "python3-async_timeout",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app async_timeout-3.0.1-py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e1/1e/5a4441be21b0726c4464f3f23c8b19628372f606755a9d2e46c187e65ec4/async_timeout-3.0.1-py3-none-any.whl",
+                    "sha256": "4291ca197d287d274d0b6cb5d6f8f8f82d434ed288f962539ff18cc9012f9ea3"
+                }
+            ]
+        },
+        {
+            "name": "python3-idna",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app idna-2.9-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl",
+                    "sha256": "a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"
+                }
+            ]
+        },
+        {
+            "name": "python3-yarl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app yarl-1.4.2.tar.gz"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d6/67/6e2507586eb1cfa6d55540845b0cd05b4b77c414f6bca8b00b45483b976e/yarl-1.4.2.tar.gz",
+                    "sha256": "58cd9c469eced558cd81aa3f484b2924e8897049e06889e8ff2510435b7ef74b"
+                }
+            ]
+        },
+        {
+            "name": "python3-aiohttp",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app aiohttp-3.6.2.tar.gz"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/00/94/f9fa18e8d7124d7850a5715a0b9c0584f7b9375d331d35e157cee50f27cc/aiohttp-3.6.2.tar.gz",
+                    "sha256": "259ab809ff0727d0e834ac5e8a283dc5e3e0ecc30c4d80b3cd17a4139ce1f326"
                 }
             ]
         },
@@ -69,13 +195,13 @@
             "name": "python3-slixmpp",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app slixmpp-1.4.0.tar.gz"
+                "pip3 install --prefix=/app slixmpp-slix-1.5.2.tar.gz"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0a/50/76a06d929668252244a1cef515c48c21403a72988c20cab2f74ef0b4ecbd/slixmpp-1.4.0.tar.gz",
-                    "sha256": "c24a3effb2434e62c0f9e04d25ea889dc42aa2b60930782159724eda49efb894"
+                    "url": "https://lab.louiz.org/poezio/slixmpp/-/archive/slix-1.5.2/slixmpp-slix-1.5.2.tar.gz",
+                    "sha256": "7a855d1d3969adf7026a7c05808e80c285718f5115d944dd449a1c3f701df0c6"
                 }
             ]
         },
@@ -83,51 +209,14 @@
             "name": "poezio",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app poezio-0.12.tar.gz"
+                "pip3 install --prefix=/app .",
+                "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
             ],
             "sources": [
                 {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/74/38/6f07e62cc6288542c4b68aa22c9a2452c41de33cd2816f34f15df0536b38/poezio-0.12.tar.gz",
-                    "sha256": "4d4aacfda98454719e017e56e7012d283de12b8f7400b51c1fe0d1dc841f231e"
-                }
-            ]
-        },
-        {
-            "name": "poezio-hotfixes",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dm644 io.poez.Poezio.appdata.xml /app/share/metainfo/io.poez.Poezio.appdata.xml",
-                "install -Dm644 io.poez.Poezio.desktop /app/share/applications/io.poez.Poezio.desktop",
-                "install -Dm644 poezio_16.png /app/share/icons/hicolor/16x16/apps/io.poez.Poezio.png",
-                "install -Dm644 poezio_32.png /app/share/icons/hicolor/32x32/apps/io.poez.Poezio.png",
-                "install -Dm644 poezio_64.png /app/share/icons/hicolor/64x64/apps/io.poez.Poezio.png"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/io.poez.Poezio.appdata.xml",
-                    "sha256": "48cf43d1a1fcb465d17279f5ff947dd9dcdb8805f2f15fed6fea5f6ea3b0e62f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/io.poez.Poezio.desktop",
-                    "sha256": "fde70a85703039649d105a43b17829e554b510accf5950c95527898a6b436f80"
-                },
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/poezio_16.png",
-                    "sha256": "f4a6261a98eab464f54c165d090e383a443799b61e7303a9b04f488ec5726920"
-                },
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/poezio_32.png",
-                    "sha256": "282f7e4fd3f2c2eb9aa4fb85cbe44f6ab7fb3bfe4e49b5b04a7677b567621868"
-                },
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/poezio_64.png",
-                    "sha256": "5b441fad785ecb25a7abd0253a0813a3720c0cea62b3f804950c3c6f98624c84"
+                    "type": "archive",
+                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.13/poezio-v0.13.tar.gz",
+                    "sha256": "ebe8fcdd8887d97098b3ce5e9682229ed96c21e8663a17475c4674764c3819d4"
                 }
             ]
         }

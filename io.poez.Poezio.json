@@ -217,8 +217,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.13/poezio-v0.13.tar.gz",
-                    "sha256": "ebe8fcdd8887d97098b3ce5e9682229ed96c21e8663a17475c4674764c3819d4"
+                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.13.1/poezio-v0.13.1.tar.gz",
+                    "sha256": "475ac5e6eb00e7c191e17bc095c0b70c91a419c4d9a962c1fd09706c42505308"
                 }
             ]
         }

@@ -1,7 +1,7 @@
 {
     "app-id": "io.poez.Poezio",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08beta",
     "sdk": "org.freedesktop.Sdk",
     "command": "poezio",
     "finish-args": [

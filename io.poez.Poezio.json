@@ -1,12 +1,28 @@
 {
     "app-id": "io.poez.Poezio",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08beta",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "poezio",
     "finish-args": [
-        "--share=ipc",
         "--share=network"
+    ],
+    "cleanup": [
+        "/bin/chardetect",
+        "/bin/poezio_logs",
+        "/lib/python3.8/site-packages/cffi",
+        "/lib/python3.8/site-packages/pycairo",
+        "/lib/python3.8/site-packages/pycparser",
+        "/lib/python3.8/site-packages/*.dist-info",
+        "/lib/python3.8/site-packages/**/py.typed",
+        "/lib/python3.8/site-packages/**/*.c",
+        "/lib/python3.8/site-packages/**/*.pxd",
+        "/lib/python3.8/site-packages/**/*.pxi",
+        "/lib/python3.8/site-packages/**/*.pyi",
+        "/lib/python3.8/site-packages/**/*.pyx",
+        "/share/doc",
+        "/share/man",
+        "/share/poezio"
     ],
     "modules": [
         {
@@ -60,8 +76,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c/cffi-1.14.0.tar.gz",
-                    "sha256": "2d384f4a127a15ba701207f7639d94106693b6cd64173d6c8988e2c25f3ac2b6"
+                    "url": "https://files.pythonhosted.org/packages/f7/09/88bbe20b76ca76be052c366fe77aa5e3cd6e5f932766e5597fecdd95b2a8/cffi-1.14.2.tar.gz",
+                    "sha256": "ae8f34d50af2c2154035984b8b5fc5d9ed63f32fe615646ab435b05b132ca91b"
                 }
             ]
         },
@@ -83,13 +99,13 @@
             "name": "python3-attrs",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app attrs-19.3.0-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app attrs-20.1.0-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl",
-                    "sha256": "08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"
+                    "url": "https://files.pythonhosted.org/packages/d6/e1/3aa3b03e7643ffd6e499b203fd2a44f79893443e8b0b520d05d3e5c638d5/attrs-20.1.0-py2.py3-none-any.whl",
+                    "sha256": "2867b7b9f8326499ab5b0e2d12801fa5c98842d2cbd22b35112ae04bf85b4dff"
                 }
             ]
         },
@@ -207,9 +223,40 @@
             ]
         },
         {
+            "name": "python3-pycairo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/e8/9d/c8be300fc6b1298559d37a071c3833b0b251e0fff334d2e4c408d5789162/pycairo-1.19.1.tar.gz",
+                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
+                }
+            ]
+        },
+        {
+            "name": "python3-gobject",
+            "buildsystem": "simple",
+            "build-commands": [
+                "rm pyproject.toml",
+                "export PYGOBJECT_WITHOUT_PYCAIRO=1",
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/93/41/bf9ab8929f51dac2979ae81bb094728bacee3ceb049def72d3fc1bcb4241/PyGObject-3.36.1.tar.gz",
+                    "sha256": "012a589aec687bfa809a1ff9f5cd775dc7f6fcec1a6bc7fe88e1002a68f8ba34"
+                }
+            ]
+        },
+        {
             "name": "poezio",
             "buildsystem": "simple",
             "build-commands": [
+                "patch -p1 < 149.patch",
                 "pip3 install --prefix=/app .",
                 "sed -i s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
@@ -219,6 +266,11 @@
                     "type": "archive",
                     "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.13.1/poezio-v0.13.1.tar.gz",
                     "sha256": "475ac5e6eb00e7c191e17bc095c0b70c91a419c4d9a962c1fd09706c42505308"
+                },
+                {
+                    "type": "file",
+                    "url": "https://lab.louiz.org/poezio/poezio/-/merge_requests/149.patch",
+                    "sha256": "a6db16cd06c3a991b6ceef5db70e8253b3edee7350cd8185144fdc7916e75301"
                 }
             ]
         }

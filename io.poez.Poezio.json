@@ -267,6 +267,7 @@
             "build-commands": [
                 "patch -p1 < 149.patch",
                 "sed -i /component/s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
+                "sed -i /project_license/s/Zlib/GPL-3.0-or-later/ data/io.poez.Poezio.appdata.xml",
                 "pip3 install --prefix=/app .",
                 "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' /app/share/applications/io.poez.Poezio.desktop",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"

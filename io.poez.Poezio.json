@@ -283,6 +283,148 @@
                     "sha256": "a6db16cd06c3a991b6ceef5db70e8253b3edee7350cd8185144fdc7916e75301"
                 }
             ]
+        },
+        {
+            "name": "python3-cryptography",
+            "buildsystem": "simple",
+            "build-commands": [
+                "rm pyproject.toml",
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/94/5c/42de91c7fbdb817b2d9a4e64b067946eb38a4eb36c1a09c96c87a0f86a82/cryptography-3.2.1.tar.gz",
+                    "sha256": "d3d5e10be0cf2a12214ddee45c6bd203dab435e3d83b4560c03066eda600bfe3"
+                }
+            ]
+        },
+        {
+            "name": "python3-libnacl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app libnacl-1.7.2-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/57/5e/e812f85943714928518bcfc9b4948887ceddf75bf47a58441595f9f6ee5d/libnacl-1.7.2-py2.py3-none-any.whl",
+                    "sha256": "7418623b64aeed76f7b003d3a360f5c0dbb5d98adc98c6db4ddd4a15caf5186a"
+                }
+            ]
+        },
+        {
+            "name": "python3-xeddsa",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/66/f3/3230fd00dfe52cd08d6fd24b29a83dc309a196c6d0a57634619681228909/XEdDSA-0.6.0.tar.gz",
+                    "sha256": "996877dcf9b17da0d188ca5e53b92aadeba90484365bfda4d17017246472735b"
+                }
+            ]
+        },
+        {
+            "name": "python3-x3dh",
+            "buildsystem": "simple",
+            "build-commands": [
+                "sed -i '/install_requires/s/\"XEdDSA.*\"/\"XEdDSA==0.6.0\"/' setup.py",
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/e2/ea/e6f9daa71010cb52629fb299ee629929d9fdb861ebee1dce4853f2bf6bde/X3DH-0.5.9.tar.gz",
+                    "sha256": "5ed6569a05af547723247884a7d2604f725a64d2f4fa6d232ad81052cd8e9d8d"
+                }
+            ]
+        },
+        {
+            "name": "python3-omemo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/a9/8e/42f78f7b5451fc1adb6db82715ae03918325ab8ed2115dc5e956c33a4c58/OMEMO-0.12.0.tar.gz",
+                    "sha256": "073cbc8ef8ba16b0b4c9bd1d1415328d90bd4d43077a0e96a4385f422849d04e"
+                }
+            ]
+        },
+        {
+            "name": "python3-doubleratchet",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/68/d4/89a53f33f5b933311ec707f41e2b2badc6bf30cb22b0c1feab06005381a7/DoubleRatchet-0.7.0.tar.gz",
+                    "sha256": "29cb843c98a60fcb45d8c3dc4e0b0e3432499a48b90d79ca52f93e615ec7f769"
+                }
+            ]
+        },
+        {
+            "name": "python3-protobuf",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/25/ef/8f36bc7e4c3dcad241a9e7a51520d30712a7abc034343bed841ff4ea3289/protobuf-3.13.0.tar.gz",
+                    "sha256": "6a82e0c8bb2bf58f606040cc5814e07715b2094caeba281e2e7d0b0e2e397db5"
+                }
+            ]
+        },
+        {
+            "name": "python3-omemo-backend-signal",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/ef/45/1d02e202decf4db159f27f49b5129e4aad4ebdf74f79e480c13692cf43b0/omemo-backend-signal-0.2.6.tar.gz",
+                    "sha256": "5d91f1026863dfb4b11386b7aeb6a2753de60bcbbcb08acabf42ad5bf6f046c5"
+                }
+            ]
+        },
+        {
+            "name": "slixmpp-omemo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://lab.louiz.org/poezio/slixmpp-omemo",
+                    "commit": "957b555d930b14f99f1dedd4d52ea1f1d0a92ca9"
+                }
+            ]
+        },
+        {
+            "name": "poezio-omemo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://lab.louiz.org/poezio/poezio-omemo",
+                    "commit": "7f2791bd3ac75c9ef96160841d23f5e4b995a8b7"
+                }
+            ]
         }
     ]
 }

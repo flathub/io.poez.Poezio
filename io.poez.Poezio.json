@@ -17,15 +17,15 @@
         "/bin/chardetect",
         "/bin/poezio_logs",
         "/include",
+        "/lib/pkgconfig",
         "/lib/python3.8/site-packages/cffi",
-        "/lib/python3.8/site-packages/_cffi_backend.cpython-38-x86_64-linux-gnu.so",
         "/lib/python3.8/site-packages/poezio/poopt.py",
         "/lib/python3.8/site-packages/pycparser",
         "/lib/python3.8/site-packages/pygtkcompat",
-        "/lib/python3.8/site-packages/*.dist-info",
         "py.typed",
         "*.c",
         "*.h",
+        "*.la",
         "*.pxd",
         "*.pxi",
         "*.pyi",
@@ -272,6 +272,7 @@
                 "sed -i /project_license/s/Zlib/GPL-3.0-or-later/ data/io.poez.Poezio.appdata.xml",
                 "pip3 install --prefix=/app .",
                 "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' /app/share/applications/io.poez.Poezio.desktop",
+                "sed -i '/^plugins_autoload =/s,=.*,= omemo,' /app/lib/python3.8/site-packages/poezio/default_config.cfg",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
             ],
             "sources": [
@@ -354,6 +355,20 @@
             ]
         },
         {
+            "name": "libsodium",
+            "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-static"
+	    ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz",
+                    "sha256": "6f504490b342a4f8a4c4a02fc9b866cbef8622d5df4e5452b46be121e46636c1"
+                }
+            ]
+        },
+        {
             "name": "python3-libnacl",
             "buildsystem": "simple",
             "build-commands": [
@@ -364,6 +379,21 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/9b/dd/395854871aa26b2d082d9c583a5ec807e26132029b0a5a935510b6ae515b/libnacl-1.8.0-py2.py3-none-any.whl",
                     "sha256": "a2a4721e9d3d65a2630f9f904ab6624bb6f9e57ab0574244f666d1b58cea0f33"
+                }
+            ]
+        },
+        {
+            "name": "python3-pynacl",
+            "buildsystem": "simple",
+            "build-commands": [
+                "rm pyproject.toml",
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/cf/5a/25aeb636baeceab15c8e57e66b8aa930c011ec1c035f284170cacb05025e/PyNaCl-1.4.0.tar.gz",
+                    "sha256": "54e9a2c849c742006516ad56a88f5c74bf2ce92c9f67435187c3c5953b346505"
                 }
             ]
         },
@@ -460,9 +490,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://lab.louiz.org/poezio/slixmpp-omemo",
-                    "commit": "957b555d930b14f99f1dedd4d52ea1f1d0a92ca9"
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/d9/ac/808ffa63685fd21413ecd24e4c2c67b61bfbc870af22461e5d4c12f97280/slixmpp-omemo-0.5.0.tar.gz",
+                    "sha256": "3e5191ec127c1dd997f2e7093c51b791772d704550d90438bb3b3db55c017d8b"
                 }
             ]
         },
@@ -474,9 +504,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://lab.louiz.org/poezio/poezio-omemo",
-                    "commit": "7f2791bd3ac75c9ef96160841d23f5e4b995a8b7"
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/aa/c7/a3912805f46825d1ea1d25755a8ff59a22ad86dc995bffcf162691c2466f/poezio-omemo-0.4.0.tar.gz",
+                    "sha256": "eef8ef26220573a78533e1a0972ee25b76bdcb5aa354dcdb28d96cc344fe218d"
                 }
             ]
         }

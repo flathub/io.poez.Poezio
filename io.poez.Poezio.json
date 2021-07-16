@@ -3,6 +3,9 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
     "command": "poezio",
     "finish-args": [
         "--filesystem=xdg-cache/poezio:create",
@@ -270,18 +273,69 @@
             ]
         },
         {
-            "name": "python3-cryptography",
+            "name": "python3-toml",
             "buildsystem": "simple",
             "build-commands": [
-                "rm pyproject.toml",
-                "pip3 install --prefix=/app ."
+                "pip3 install --prefix=/app toml-0.10.2-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/94/5c/42de91c7fbdb817b2d9a4e64b067946eb38a4eb36c1a09c96c87a0f86a82/cryptography-3.2.1.tar.gz",
-                    "sha256": "d3d5e10be0cf2a12214ddee45c6bd203dab435e3d83b4560c03066eda600bfe3"
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl",
+                    "sha256": "806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"
                 }
+            ]
+        },
+        {
+            "name": "python3-semantic-version",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app semantic_version-2.8.5-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a5/15/00ef3b7888a10363b7c402350eda3acf395ff05bebae312d1296e528516a/semantic_version-2.8.5-py2.py3-none-any.whl",
+                    "sha256": "45e4b32ee9d6d70ba5f440ec8cc5221074c7f4b0e8918bdab748cc37912440a9"
+                }
+            ]
+        },
+        {
+            "name": "python3-setuptools_rust",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app setuptools_rust-0.12.1-py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/82/2b/349ad916a2f032506a2c7c0810950a299f96e05d88b21797c2170bd6b2c6/setuptools_rust-0.12.1-py3-none-any.whl",
+                    "sha256": "60c9bf1423a725e472c4a2a6274598251f959f3ed5ffe7698526e78bb431b9b7"
+                }
+            ]
+        },
+        {
+            "name": "python3-cryptography",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cd src/rust && cargo --offline fetch --manifest-path Cargo.toml --verbose",
+                "cd src/rust && cargo --offline build --release --verbose",
+                "rm pyproject.toml",
+                "pip3 install --prefix=/app ."
+            ],
+            "build-options" : {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME": "/run/build/python3-cryptography/cargo"
+		}
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/9b/77/461087a514d2e8ece1c975d8216bc03f7048e6090c5166bc34115afdaa53/cryptography-3.4.7.tar.gz",
+                    "sha256": "3d10de8116d25649631977cb37da6cbdd2d6fa0e0281d014a5b7d337255ca713"
+                },
+                "python-cryptography-cargo-sources.json"
             ]
         },
         {

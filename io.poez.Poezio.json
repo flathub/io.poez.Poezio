@@ -17,7 +17,6 @@
         "/lib/python3.8/site-packages/cffi",
         "/lib/python3.8/site-packages/_cffi_backend.cpython-38-x86_64-linux-gnu.so",
         "/lib/python3.8/site-packages/poezio/poopt.py",
-        "/lib/python3.8/site-packages/pycairo",
         "/lib/python3.8/site-packages/pycparser",
         "/lib/python3.8/site-packages/pygtkcompat",
         "/lib/python3.8/site-packages/*.dist-info",
@@ -232,32 +231,17 @@
             ]
         },
         {
-            "name": "python3-pycairo",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --prefix=/app ."
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/e8/9d/c8be300fc6b1298559d37a071c3833b0b251e0fff334d2e4c408d5789162/pycairo-1.19.1.tar.gz",
-                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
-                }
-            ]
-        },
-        {
             "name": "python3-gobject",
-            "buildsystem": "simple",
-            "build-commands": [
-                "rm pyproject.toml",
-                "export PYGOBJECT_WITHOUT_PYCAIRO=1",
-                "pip3 install --prefix=/app ."
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dpycairo=disabled",
+                "-Dtests=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/93/41/bf9ab8929f51dac2979ae81bb094728bacee3ceb049def72d3fc1bcb4241/PyGObject-3.36.1.tar.gz",
-                    "sha256": "012a589aec687bfa809a1ff9f5cd775dc7f6fcec1a6bc7fe88e1002a68f8ba34"
+                    "url": "https://files.pythonhosted.org/packages/51/2f/4d5d5afb7000b9151e33952b59163c9389bd867ac6fe85d62f85831fa061/PyGObject-3.40.1.tar.gz",
+                    "sha256": "6fb599aa59ceb9dd05fafb0d72b3862943e7d5e85c8ef6c74856bc6d4321cbab"
                 }
             ]
         },

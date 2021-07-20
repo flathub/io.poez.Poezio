@@ -268,12 +268,12 @@
             "buildsystem": "simple",
             "build-commands": [
                 "patch -p1 < 149.patch",
+                "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' data/io.poez.Poezio.desktop",
+                "sed -i '/^plugins_autoload =/s,=.*,= omemo,' data/default_config.cfg",
                 "sed -i /component/s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
                 "sed -i /project_license/s/Zlib/GPL-3.0-or-later/ data/io.poez.Poezio.appdata.xml",
+                "sed -i 's/OTR/OMEMO, OTR/g' data/io.poez.Poezio.appdata.xml",
                 "pip3 install --prefix=/app .",
-                "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' /app/share/applications/io.poez.Poezio.desktop",
-                "sed -i 's/OTR/OMEMO, OTR/g' /app/share/appdata/io.poez.Poezio.appdata.xml",
-                "sed -i '/^plugins_autoload =/s,=.*,= omemo,' /app/lib/python3.8/site-packages/poezio/default_config.cfg",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
             ],
             "sources": [

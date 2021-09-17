@@ -1,7 +1,7 @@
 {
     "app-id": "io.poez.Poezio",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -18,10 +18,10 @@
         "/bin/poezio_logs",
         "/include",
         "/lib/pkgconfig",
-        "/lib/python3.8/site-packages/cffi",
-        "/lib/python3.8/site-packages/poezio/poopt.py",
-        "/lib/python3.8/site-packages/pycparser",
-        "/lib/python3.8/site-packages/pygtkcompat",
+        "/lib/python3.9/site-packages/cffi",
+        "/lib/python3.9/site-packages/poezio/poopt.py",
+        "/lib/python3.9/site-packages/pycparser",
+        "/lib/python3.9/site-packages/pygtkcompat",
         "py.typed",
         "*.c",
         "*.h",

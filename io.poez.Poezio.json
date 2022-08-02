@@ -311,6 +311,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "patch -p1 < 0001-Make-upload-work-in-Flatpak.patch",
+                "patch -p1 < 326.patch",
                 "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' data/io.poez.Poezio.desktop",
                 "sed -i '/^plugins_autoload =/s,=.*,= omemo,' data/default_config.cfg",
                 "sed -i /component/s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
@@ -327,6 +328,11 @@
                     "type": "file",
                     "url": "https://linkmauve.fr/files/0001-Make-upload-work-in-Flatpak.patch",
                     "sha256": "8f42cbd5d73ce6b9681f2208643b76cf5cdc0e284fc1d14c0d77230eb745d23e"
+                },
+                {
+                    "type": "file",
+                    "url": "https://lab.louiz.org/poezio/poezio/-/merge_requests/326.patch",
+                    "sha256": "3e4b29403e2090fc0645131083983c57071e8583fbc73d2661e6fdc0a65212c9"
                 }
             ]
         },

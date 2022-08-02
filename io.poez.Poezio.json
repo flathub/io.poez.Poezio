@@ -391,7 +391,7 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin",
                 "env": {
                     "CARGO_HOME": "/run/build/python3-cryptography/cargo"
-		}
+                }
             },
             "sources": [
                 {
@@ -407,7 +407,7 @@
             "buildsystem": "autotools",
             "config-opts": [
                 "--disable-static"
-	    ],
+            ],
             "sources": [
                 {
                     "type": "archive",

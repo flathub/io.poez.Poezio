@@ -67,13 +67,13 @@
             "name": "python3-pycparser",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app pycparser-2.20-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app pycparser-2.21-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl",
-                    "sha256": "7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"
+                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
+                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
                 }
             ]
         },
@@ -86,8 +86,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/2e/92/87bb61538d7e60da8a7ec247dc048f7671afe17016cd0008b3b710012804/cffi-1.14.6.tar.gz",
-                    "sha256": "c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd"
+                    "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
+                    "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
                 }
             ]
         },
@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/25/5a/ed8cc3340b7e83a5e572b5d27387a968a7e52b1e3c269442076ca902b7ba/pycares-4.0.0.tar.gz",
-                    "sha256": "d0154fc5753b088758fbec9bc137e1b24bb84fc0c6a09725c8bac25a342311cd"
+                    "url": "https://files.pythonhosted.org/packages/99/da/d3d20bc7bd5baadeea04ee84db16f1f07557138c313bd6200e1cffab5bee/pycares-4.2.1.tar.gz",
+                    "sha256": "735b4f75fd0f595c4e9184da18cd87737f46bc81a64ea41f4edce2b6b68d46d2"
                 }
             ]
         },
@@ -109,13 +109,13 @@
             "name": "python3-attrs",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app attrs-21.2.0-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app attrs-22.1.0-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/20/a9/ba6f1cd1a1517ff022b35acd6a7e4246371dfab08b8e42b829b6d07913cc/attrs-21.2.0-py2.py3-none-any.whl",
-                    "sha256": "149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1"
+                    "url": "https://files.pythonhosted.org/packages/f2/bc/d817287d1aa01878af07c19505fafd1165cd6a119e9d0821ca1d1c20312d/attrs-22.1.0-py2.py3-none-any.whl",
+                    "sha256": "86efa402f67bf2df34f51a335487cf46b1ec130d02b8d39fd248abfd30da551c"
                 }
             ]
         },
@@ -137,13 +137,13 @@
             "name": "python3-chardet",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app chardet-4.0.0-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app chardet-5.0.0-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl",
-                    "sha256": "f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"
+                    "url": "https://files.pythonhosted.org/packages/4c/d1/1b96dd69fa42f20b70701b5cd42a75dd5f0c7a24dc0abfef35cc146210dc/chardet-5.0.0-py3-none-any.whl",
+                    "sha256": "d3e64f022d254183001eccc5db4040520c0f23b1a3f33d6413e099eb7f126557"
                 }
             ]
         },
@@ -157,8 +157,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/1c/74/e8b46156f37ca56d10d895d4e8595aa2b344cff3c1fb3629ec97a8656ccb/multidict-5.1.0.tar.gz",
-                    "sha256": "25b4e5f22d3a37ddf3effc0710ba692cfc792c2b9edfb9c05aefe823256e84d5"
+                    "url": "https://files.pythonhosted.org/packages/fa/a7/71c253cdb8a1528802bac7503bf82fe674367e4055b09c28846fdfa4ab90/multidict-6.0.2.tar.gz",
+                    "sha256": "5ff3bd75f38e4c43f1f470f2df7a4d430b821c4ce22be384e1459cb57d6bb013"
                 }
             ]
         },
@@ -166,13 +166,13 @@
             "name": "python3-async_timeout",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app async_timeout-3.0.1-py3-none-any.whl"
+                "pip3 install --prefix=/app async_timeout-4.0.2-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e1/1e/5a4441be21b0726c4464f3f23c8b19628372f606755a9d2e46c187e65ec4/async_timeout-3.0.1-py3-none-any.whl",
-                    "sha256": "4291ca197d287d274d0b6cb5d6f8f8f82d434ed288f962539ff18cc9012f9ea3"
+                    "url": "https://files.pythonhosted.org/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl",
+                    "sha256": "8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"
                 }
             ]
         },
@@ -180,13 +180,13 @@
             "name": "python3-idna",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app idna-3.2-py3-none-any.whl"
+                "pip3 install --prefix=/app idna-3.3-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d7/77/ff688d1504cdc4db2a938e2b7b9adee5dd52e34efbd2431051efc9984de9/idna-3.2-py3-none-any.whl",
-                    "sha256": "14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"
+                    "url": "https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl",
+                    "sha256": "84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"
                 }
             ]
         },
@@ -200,8 +200,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/97/e7/af7219a0fe240e8ef6bb555341a63c43045c21ab0392b4435e754b716fa1/yarl-1.6.3.tar.gz",
-                    "sha256": "8a9066529240171b68893d60dca86a763eae2139dd42f42106b03cf4b426bf10"
+                    "url": "https://files.pythonhosted.org/packages/d6/04/255c68974ec47fa754564c4abba8f61f9ed68b869bbbb854198d6259c4f7/yarl-1.8.1.tar.gz",
+                    "sha256": "af887845b8c2e060eb5605ff72b6f2dd2aab7a761379373fd89d314f4752abbf"
                 }
             ]
         },
@@ -209,13 +209,56 @@
             "name": "python3-typing_extensions",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app typing_extensions-3.10.0.0-py3-none-any.whl"
+                "pip3 install --prefix=/app typing_extensions-4.3.0-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2e/35/6c4fff5ab443b57116cb1aad46421fb719bed2825664e8fe77d66d99bcbc/typing_extensions-3.10.0.0-py3-none-any.whl",
-                    "sha256": "779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"
+                    "url": "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl",
+                    "sha256": "25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"
+                }
+            ]
+        },
+        {
+            "name": "python3-frozenlist",
+            "buildsystem": "simple",
+            "build-commands": [
+                "rm pyproject.toml",
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/f4/f7/8dfeb76d2a52bcea2b0718427af954ffec98be1d34cd8f282034b3e36829/frozenlist-1.3.0.tar.gz",
+                    "sha256": "ce6f2ba0edb7b0c1d8976565298ad2deba6f8064d2bebb6ffce2ca896eb35b0b"
+                }
+            ]
+        },
+        {
+            "name": "python3-charset-normalizer",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app charset_normalizer-2.1.0-py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/94/69/64b11e8c2fb21f08634468caef885112e682b0ebe2908e74d3616eb1c113/charset_normalizer-2.1.0-py3-none-any.whl",
+                    "sha256": "5189b6f22b01957427f35b6a08d9a0bc45b46d3788ef5a92e978433c7a35f8a5"
+                }
+            ]
+        },
+        {
+            "name": "python3-aiosignal",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app aiosignal-1.2.0-py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3b/87/fe94898f2d44a93a35d5aa74671ed28094d80753a1113d68b799fab6dc22/aiosignal-1.2.0-py3-none-any.whl",
+                    "sha256": "26e62109036cd181df6e6ad646f91f0dcfd05fe16d0cb924138ff2ab75d64e3a"
                 }
             ]
         },
@@ -229,8 +272,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/99/f5/90ede947a3ce2d6de1614799f5fea4e93c19b6520a59dc5d2f64123b032f/aiohttp-3.7.4.post0.tar.gz",
-                    "sha256": "493d3299ebe5f5a7c66b9819eacdcfbbaaf1a8e84911ddffcdc48888497afecf"
+                    "url": "https://files.pythonhosted.org/packages/5a/86/5f63de7a202550269a617a5d57859a2961f3396ecd1739a70b92224766bc/aiohttp-3.8.1.tar.gz",
+                    "sha256": "fc5471e1a54de15ef71c1bc6ebe80d4dc681ea600e68bfd1cbce40427f0b7578"
                 }
             ]
         },
@@ -243,8 +286,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/89/94/42d1731dc84a73c8099a54b20f3266bff7d2c76588305df3803535bc086c/slixmpp-1.7.1.tar.gz",
-                    "sha256": "9af836dc5747259788651726f062d69a6f430d306ddbd8e6b141c1fec99549e7"
+                    "url": "https://files.pythonhosted.org/packages/6e/0c/5ecd888035b5ff16f82a52becb16a5391fc58cf6de951741dd9276fce5a6/slixmpp-1.8.2.tar.gz",
+                    "sha256": "53b943da2572da04b92ada29e0f54a83e7146c8838309b7e9bab47e5a39bd58e"
                 }
             ]
         },
@@ -258,8 +301,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/51/2f/4d5d5afb7000b9151e33952b59163c9389bd867ac6fe85d62f85831fa061/PyGObject-3.40.1.tar.gz",
-                    "sha256": "6fb599aa59ceb9dd05fafb0d72b3862943e7d5e85c8ef6c74856bc6d4321cbab"
+                    "url": "https://files.pythonhosted.org/packages/fe/40/9afaeb8d3b453fb8596fcb6c7bc2b64e434868c91eda19955742778eff74/PyGObject-3.42.2.tar.gz",
+                    "sha256": "21524cef33100c8fd59dc135948b703d79d303e368ce71fa60521cc971cd8aa7"
                 }
             ]
         },
@@ -267,11 +310,10 @@
             "name": "poezio",
             "buildsystem": "simple",
             "build-commands": [
-                "patch -p1 < 149.patch",
+                "patch -p1 < 0001-Make-upload-work-in-Flatpak.patch",
                 "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' data/io.poez.Poezio.desktop",
                 "sed -i '/^plugins_autoload =/s,=.*,= omemo,' data/default_config.cfg",
                 "sed -i /component/s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
-                "sed -i /project_license/s/Zlib/GPL-3.0-or-later/ data/io.poez.Poezio.appdata.xml",
                 "sed -i 's/OTR/OMEMO, OTR/g' data/io.poez.Poezio.appdata.xml",
                 "pip3 install --prefix=/app .",
                 "install -Dm644 data/poezio_logo.svg /app/share/icons/hicolor/scalable/apps/io.poez.Poezio.svg"
@@ -279,13 +321,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.13.1/poezio-v0.13.1.tar.gz",
-                    "sha256": "475ac5e6eb00e7c191e17bc095c0b70c91a419c4d9a962c1fd09706c42505308"
+                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.14/poezio-v0.14.tar.gz",
+                    "sha256": "484d286190a66e79856533a51c428a2dada769b4d67e5ad471b0541dbdfb04c0"
                 },
                 {
                     "type": "file",
-                    "url": "https://lab.louiz.org/poezio/poezio/-/merge_requests/149.patch",
-                    "sha256": "77e3a00b18df1a01fbd00e564c21c97c97482a07e8a2dbe8797c5444cc16a951"
+                    "url": "https://linkmauve.fr/files/0001-Make-upload-work-in-Flatpak.patch",
+                    "sha256": "8f42cbd5d73ce6b9681f2208643b76cf5cdc0e284fc1d14c0d77230eb745d23e"
                 }
             ]
         },
@@ -307,13 +349,13 @@
             "name": "python3-semantic-version",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app semantic_version-2.8.5-py2.py3-none-any.whl"
+                "pip3 install --prefix=/app semantic_version-2.10.0-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a5/15/00ef3b7888a10363b7c402350eda3acf395ff05bebae312d1296e528516a/semantic_version-2.8.5-py2.py3-none-any.whl",
-                    "sha256": "45e4b32ee9d6d70ba5f440ec8cc5221074c7f4b0e8918bdab748cc37912440a9"
+                    "url": "https://files.pythonhosted.org/packages/6a/23/8146aad7d88f4fcb3a6218f41a60f6c2d4e3a72de72da1825dc7c8f7877c/semantic_version-2.10.0-py2.py3-none-any.whl",
+                    "sha256": "de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177"
                 }
             ]
         },
@@ -349,8 +391,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/9b/77/461087a514d2e8ece1c975d8216bc03f7048e6090c5166bc34115afdaa53/cryptography-3.4.7.tar.gz",
-                    "sha256": "3d10de8116d25649631977cb37da6cbdd2d6fa0e0281d014a5b7d337255ca713"
+                    "url": "https://files.pythonhosted.org/packages/89/d9/5fcd312d5cce0b4d7ee8b551a0ea99e4ea9db0fdbf6dd455a19042e3370b/cryptography-37.0.4.tar.gz",
+                    "sha256": "63f9c17c0e2474ccbebc9302ce2f07b55b3b3fcb211ded18a42d5764f5c10a82"
                 },
                 "python-cryptography-cargo-sources.json"
             ]
@@ -393,8 +435,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/cf/5a/25aeb636baeceab15c8e57e66b8aa930c011ec1c035f284170cacb05025e/PyNaCl-1.4.0.tar.gz",
-                    "sha256": "54e9a2c849c742006516ad56a88f5c74bf2ce92c9f67435187c3c5953b346505"
+                    "url": "https://files.pythonhosted.org/packages/a7/22/27582568be639dfe22ddb3902225f91f2f17ceff88ce80e4db396c8986da/PyNaCl-1.5.0.tar.gz",
+                    "sha256": "8ac7448f09ab85811607bdd21ec2464495ac8b7c66d146bf545b0f08fb9220ba"
                 }
             ]
         },
@@ -436,8 +478,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/a9/8e/42f78f7b5451fc1adb6db82715ae03918325ab8ed2115dc5e956c33a4c58/OMEMO-0.12.0.tar.gz",
-                    "sha256": "073cbc8ef8ba16b0b4c9bd1d1415328d90bd4d43077a0e96a4385f422849d04e"
+                    "url": "https://files.pythonhosted.org/packages/c6/5b/0083393bde905770dbaefb50c5c6def139d4179c53b33993a81b986fae7f/OMEMO-0.14.0.tar.gz",
+                    "sha256": "b257884dcf6a84fb5ed417c626b6a02d264dc61330fe06e5a177517072090e25"
                 }
             ]
         },
@@ -464,8 +506,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/3d/64/a3b379cb9c7827ad33c67dcda4c4ad117bdef1b7d68b22a05c963cf4727d/protobuf-3.17.3.tar.gz",
-                    "sha256": "72804ea5eaa9c22a090d2803813e280fb273b62d5ae497aaf3553d141c4fdd7b"
+                    "url": "https://files.pythonhosted.org/packages/41/74/805a785b4d1415fab34f62c62af1706b58da3164b3cf4b23b87b1a40a0ba/protobuf-4.21.4.tar.gz",
+                    "sha256": "5783dc0d6edae631145337fabb18503b4f77274f94cdd22a4b26b9fe5029e718"
                 }
             ]
         },
@@ -473,13 +515,14 @@
             "name": "python3-omemo-backend-signal",
             "buildsystem": "simple",
             "build-commands": [
+                "sed -i '/cryptography/s/,<37//' setup.py",
                 "pip3 install --prefix=/app ."
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/ef/45/1d02e202decf4db159f27f49b5129e4aad4ebdf74f79e480c13692cf43b0/omemo-backend-signal-0.2.6.tar.gz",
-                    "sha256": "5d91f1026863dfb4b11386b7aeb6a2753de60bcbbcb08acabf42ad5bf6f046c5"
+                    "url": "https://files.pythonhosted.org/packages/29/fb/a316302f13619abf9f7b1011367125efd8580be06ca3df84f985cd4cf383/omemo-backend-signal-0.3.0.tar.gz",
+                    "sha256": "fba4b75e2aefd86b56d34324bdc0761b2072439c68c936a6bd314cf9bd80643e"
                 }
             ]
         },
@@ -492,8 +535,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/d9/ac/808ffa63685fd21413ecd24e4c2c67b61bfbc870af22461e5d4c12f97280/slixmpp-omemo-0.5.0.tar.gz",
-                    "sha256": "3e5191ec127c1dd997f2e7093c51b791772d704550d90438bb3b3db55c017d8b"
+                    "url": "https://files.pythonhosted.org/packages/e9/44/7a2ea47ba7fd61b6252c8bc382c66df7f3d295d57a2d4df05f9facbbbeb1/slixmpp-omemo-0.7.0.tar.gz",
+                    "sha256": "c52d02524824e591e3778f732fc60e72975ca3bde54b9d104ce961677cc6d37a"
                 }
             ]
         },
@@ -506,8 +549,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/aa/c7/a3912805f46825d1ea1d25755a8ff59a22ad86dc995bffcf162691c2466f/poezio-omemo-0.4.0.tar.gz",
-                    "sha256": "eef8ef26220573a78533e1a0972ee25b76bdcb5aa354dcdb28d96cc344fe218d"
+                    "url": "https://files.pythonhosted.org/packages/fd/d1/cea881782c04176cea30831509492c39dfb2a7b72b5dc4c44c3ab486810b/poezio-omemo-0.6.0.tar.gz",
+                    "sha256": "517a28a1ea7e7c850443e2e023c1352dc258fbae1a6e8a7e8bb03b7ab9d1a07a"
                 }
             ]
         }

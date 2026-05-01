@@ -310,8 +310,6 @@
             "name": "poezio",
             "buildsystem": "simple",
             "build-commands": [
-                "patch -p1 < 0001-Make-upload-work-in-Flatpak.patch",
-                "patch -p1 < 326.patch",
                 "sed -i '/^Exec=/s,=.*,=/app/bin/poezio,' data/io.poez.Poezio.desktop",
                 "sed -i '/^plugins_autoload =/s,=.*,= omemo,' data/default_config.cfg",
                 "sed -i /component/s/console-application/desktop/ data/io.poez.Poezio.appdata.xml",
@@ -321,18 +319,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://lab.louiz.org/poezio/poezio/-/archive/v0.14/poezio-v0.14.tar.gz",
-                    "sha256": "484d286190a66e79856533a51c428a2dada769b4d67e5ad471b0541dbdfb04c0"
-                },
-                {
-                    "type": "file",
-                    "url": "https://linkmauve.fr/files/0001-Make-upload-work-in-Flatpak.patch",
-                    "sha256": "8f42cbd5d73ce6b9681f2208643b76cf5cdc0e284fc1d14c0d77230eb745d23e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://lab.louiz.org/poezio/poezio/-/merge_requests/326.patch",
-                    "sha256": "3e4b29403e2090fc0645131083983c57071e8583fbc73d2661e6fdc0a65212c9"
+                    "url": "https://codeberg.org/poezio/poezio/archive/v0.17.tar.gz",
+                    "sha256": "fa690ad8158c27839cb881c0b6163e42d2ba5643ba23751c7edf55935e17fa03"
                 }
             ]
         },

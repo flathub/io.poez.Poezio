@@ -8,9 +8,6 @@
     ],
     "command": "poezio",
     "finish-args": [
-        "--filesystem=xdg-cache/poezio:create",
-        "--filesystem=xdg-config/poezio:create",
-        "--filesystem=xdg-data/poezio:create",
         "--share=network"
     ],
     "cleanup": [

@@ -360,6 +360,10 @@
                     "type": "archive",
                     "url": "https://codeberg.org/poezio/poezio/archive/v0.17.tar.gz",
                     "sha256": "fa690ad8158c27839cb881c0b6163e42d2ba5643ba23751c7edf55935e17fa03"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-appdata-fix-a-bunch-of-stuff.patch"
                 }
             ]
         },

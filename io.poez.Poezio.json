@@ -361,6 +361,10 @@
                 {
                     "type": "patch",
                     "path": "0001-appdata-fix-a-bunch-of-stuff.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0002-appdata-add-missing-release-info.patch"
                 }
             ]
         },

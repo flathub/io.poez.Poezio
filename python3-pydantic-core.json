@@ -496,14 +496,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libc/libc-0.2.155.crate",
-        "sha256": "97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c",
-        "dest": "cargo/vendor/libc-0.2.155"
+        "url": "https://static.crates.io/crates/libc/libc-0.2.185.crate",
+        "sha256": "52ff2c0fe9bc6cb6b14a0592c2ff4fa9ceb83eea9db979b0487cd054946a2b8f",
+        "dest": "cargo/vendor/libc-0.2.185"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c\", \"files\": {}}",
-        "dest": "cargo/vendor/libc-0.2.155",
+        "contents": "{\"package\": \"52ff2c0fe9bc6cb6b14a0592c2ff4fa9ceb83eea9db979b0487cd054946a2b8f\", \"files\": {}}",
+        "dest": "cargo/vendor/libc-0.2.185",
         "dest-filename": ".cargo-checksum.json"
     },
     {

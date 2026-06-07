@@ -127,13 +127,13 @@
             "name": "python3-aiodns",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app aiodns-4.0.0-py3-none-any.whl"
+                "pip3 install --prefix=/app aiodns-4.0.4-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/60/14ac40c03e8a26216e4f2642497b776e52f9e3214e4fd537628829bbb082/aiodns-4.0.0-py3-none-any.whl",
-                    "sha256": "a188a75fb8b2b7862ac8f84811a231402fb74f5b4e6f10766dc8a4544b0cf989"
+                    "url": "https://files.pythonhosted.org/packages/7f/70/72e4ab117425ccdc4d10bd523a94c1baa051a15586057d64a4c6888f9e3f/aiodns-4.0.4-py3-none-any.whl",
+                    "sha256": "c24dd605bac70a1676ce503f967a98483ff163507198557d8e9db16267e6cfd2"
                 }
             ]
         },
@@ -183,13 +183,13 @@
             "name": "python3-idna",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app idna-3.13-py3-none-any.whl"
+                "pip3 install --prefix=/app idna-3.18-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5d/13/ad7d7ca3808a898b4612b6fe93cde56b53f3034dcde235acb1f0e1df24c6/idna-3.13-py3-none-any.whl",
-                    "sha256": "892ea0cde124a99ce773decba204c5552b69c3c67ffd5f232eb7696135bc8bb3"
+                    "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
+                    "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
                 }
             ]
         },
@@ -197,13 +197,13 @@
             "name": "python3-propcache",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app propcache-0.4.1-py3-none-any.whl"
+                "pip3 install --prefix=/app propcache-0.5.2-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5b/5a/bc7b4a4ef808fa59a816c17b20c4bef6884daebbdf627ff2a161da67da19/propcache-0.4.1-py3-none-any.whl",
-                    "sha256": "af2a6052aeb6cf17d3e46ee169099044fd8224cbaf75c76a2ef596e8163e2237"
+                    "url": "https://files.pythonhosted.org/packages/3a/ed/1cdcab6ba3d6ab7feca11fc14f0eeea80755bb53ef4e892079f31b10a25f/propcache-0.5.2-py3-none-any.whl",
+                    "sha256": "be1ddfcbb376e3de5d2e2db1d58d6d67463e6b4f9f040c000de8e300295465fe"
                 }
             ]
         },
@@ -211,13 +211,13 @@
             "name": "python3-yarl",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app yarl-1.23.0-py3-none-any.whl"
+                "pip3 install --prefix=/app yarl-1.24.2-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/69/68/c8739671f5699c7dc470580a4f821ef37c32c4cb0b047ce223a7f115757f/yarl-1.23.0-py3-none-any.whl",
-                    "sha256": "a2df6afe50dea8ae15fa34c9f824a3ee958d785fd5d089063d960bae1daa0a3f"
+                    "url": "https://files.pythonhosted.org/packages/fd/4d/4b880086bd0d3e034d25647be1d830afc3e3f610e98c4ab3490af6b1b6d5/yarl-1.24.2-py3-none-any.whl",
+                    "sha256": "2783d9226db8797636cd6896e4de81feed252d1db72265686c9558d97a4d94b9"
                 }
             ]
         },
@@ -267,13 +267,13 @@
             "name": "python3-aiohappyeyeballs",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app aiohappyeyeballs-2.6.1-py3-none-any.whl"
+                "pip3 install --prefix=/app aiohappyeyeballs-2.6.2-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl",
-                    "sha256": "f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8"
+                    "url": "https://files.pythonhosted.org/packages/5f/fc/a7bf5b6e4e617b45f90f2d9d2a68519c249c81dd4fc2658c7a2a61c4f4b7/aiohappyeyeballs-2.6.2-py3-none-any.whl",
+                    "sha256": "4708045e2d7a6c6bdf8aafa8ed39649eaf926a4543b54560659129e3365953c4"
                 }
             ]
         },
@@ -286,8 +286,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/77/9a/152096d4808df8e4268befa55fba462f440f14beab85e8ad9bf990516918/aiohttp-3.13.5.tar.gz",
-                    "sha256": "9d98cc980ecc96be6eb4c1994ce35d28d8b1f5e5208a23b421187d1209dbb7d1"
+                    "url": "https://files.pythonhosted.org/packages/ee/ab/93ce242f899b68c51b0578c027aafa791ab3614cb9345fa5d37b5f5c8e3e/aiohttp-3.14.0.tar.gz",
+                    "sha256": "2882de819734c715fd1b9c11c97e09fa020d14438203d1d354d8ed1702791c9b"
                 }
             ]
         },
@@ -355,16 +355,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://codeberg.org/poezio/poezio/archive/v0.17.tar.gz",
-                    "sha256": "fa690ad8158c27839cb881c0b6163e42d2ba5643ba23751c7edf55935e17fa03"
+                    "url": "https://codeberg.org/poezio/poezio/archive/v0.18.tar.gz",
+                    "sha256": "477b13edb47d544cc2be80a8f5ef590ff9dbbada0463a877bd68cbbc0563f343"
                 },
                 {
                     "type": "patch",
-                    "path": "0001-appdata-fix-a-bunch-of-stuff.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0002-appdata-add-missing-release-info.patch"
+                    "path": "0001-appdata-add-missing-0.18-release.patch"
                 }
             ]
         },
@@ -372,13 +368,13 @@
             "name": "python3-filelock",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app filelock-3.29.0-py3-none-any.whl"
+                "pip3 install --prefix=/app filelock-3.29.1-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/81/47/dd9a212ef6e343a6857485ffe25bba537304f1913bdbed446a23f7f592e1/filelock-3.29.0-py3-none-any.whl",
-                    "sha256": "96f5f6344709aa1572bbf631c640e4ebeeb519e08da902c39a001882f30ac258"
+                    "url": "https://files.pythonhosted.org/packages/4c/a0/614c5fe402fd88951df45f4dda2fa3b4e17a99ecd92340771929169b3b95/filelock-3.29.1-py3-none-any.whl",
+                    "sha256": "85199dfd706869641b72b2e8955d5416a4b2b7dc4b0e8e6d97b4cc1299a6983b"
                 }
             ]
         },
@@ -400,13 +396,13 @@
             "name": "python3-certifi",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app certifi-2026.4.22-py3-none-any.whl"
+                "pip3 install --prefix=/app certifi-2026.5.20-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/22/30/7cd8fdcdfbc5b869528b079bfb76dcdf6056b1a2097a662e5e8c04f42965/certifi-2026.4.22-py3-none-any.whl",
-                    "sha256": "3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a"
+                    "url": "https://files.pythonhosted.org/packages/59/8c/57e832b7af6d7c5abe66eb3fbe3a3a32f4d11ea23a1aa7131371035be991/certifi-2026.5.20-py3-none-any.whl",
+                    "sha256": "3c52e209ba0a4ad7aebe60436a4ab349c39e1e602e8c134221e546902ad25897"
                 }
             ]
         },
@@ -456,13 +452,13 @@
             "name": "python3-platformdirs",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app platformdirs-4.9.6-py3-none-any.whl"
+                "pip3 install --prefix=/app platformdirs-4.10.0-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/75/a6/a0a304dc33b49145b21f4808d763822111e67d1c3a32b524a1baf947b6e1/platformdirs-4.9.6-py3-none-any.whl",
-                    "sha256": "e61adb1d5e5cb3441b4b7710bea7e4c12250ca49439228cc1021c00dcfac0917"
+                    "url": "https://files.pythonhosted.org/packages/81/e6/cd9575ac904136b3cbf7aa7ee819ef86eedb7274e46f230e94ea4342e729/platformdirs-4.10.0-py3-none-any.whl",
+                    "sha256": "fb516cdb12eb0d857d0cd85a7c57cea4d060bee4578d6cf5a14dfdf8cbf8784a"
                 }
             ]
         },
@@ -470,13 +466,13 @@
             "name": "python3-tqdm",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app tqdm-4.67.3-py3-none-any.whl"
+                "pip3 install --prefix=/app tqdm-4.68.1-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl",
-                    "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf"
+                    "url": "https://files.pythonhosted.org/packages/47/aa/218a0eb34de1f753c83e4d0d1c8e7c4cef27f20dcb8342e024f63a80dc86/tqdm-4.68.1-py3-none-any.whl",
+                    "sha256": "fea4a90e4023f764914569f7802a297277c5ab1a66be5144143e142e1a4031d8"
                 }
             ]
         },
@@ -484,13 +480,13 @@
             "name": "python3-puccinialin",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app puccinialin-0.1.11-py3-none-any.whl"
+                "pip3 install --prefix=/app puccinialin-0.1.12-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4c/74/deae6e19aa33b246a074c6960812a988a081fb514aa94acc2d1108fadbd2/puccinialin-0.1.11-py3-none-any.whl",
-                    "sha256": "e43decfcaa6fe90c70acc23441518939238feb21119cdd4ad742867f63d83b9d"
+                    "url": "https://files.pythonhosted.org/packages/b7/de/b7e2c5adff98e583bfdfa7fdd60d50114c88ea4f022eb139ae397f9205fb/puccinialin-0.1.12-py3-none-any.whl",
+                    "sha256": "0813f51e617c938a346003c20de2f118f81f2843abda136c671473a908f63ec1"
                 }
             ]
         },
@@ -509,8 +505,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/39/16/b284a7bc4af3dd87717c784278c1b8cb18606ad1f6f7a671c47bfd9c3df0/maturin-1.13.1.tar.gz",
-                    "sha256": "9a87ff3b8e4d1c6eac33ebfe8e261e8236516d98d45c0323550621819b5a1a2f"
+                    "url": "https://files.pythonhosted.org/packages/9c/1c/612d23d33ec21b9ae7ece7b3f0dd5f9dfd57b4009e9d2938165869ebd6ae/maturin-1.13.3.tar.gz",
+                    "sha256": "771e1e9e71a278e56db01552e0d1acfd1464259f9575b6e72842f893cd299079"
                 },
                 "python3-maturin.json"
             ]
@@ -530,8 +526,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/ef/b2/7ffa7fe8207a8c42147ffe70c3e360b228160c1d85dc3faff16aaa3244c0/cryptography-47.0.0.tar.gz",
-                    "sha256": "9f8e55fe4e63613a5e1cc5819030f27b97742d720203a087802ce4ce9ceb52bb"
+                    "url": "https://files.pythonhosted.org/packages/9f/a9/db8f313fdcd85d767d4973515e1db101f9c71f95fced83233de224673757/cryptography-48.0.0.tar.gz",
+                    "sha256": "5c3932f4436d1cccb036cb0eaef46e6e2db91035166f1ad6505c3c9d5a635920"
                 },
                 "python3-cryptography.json"
             ]
@@ -646,8 +642,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://files.pythonhosted.org/packages/2a/ef/f7abb56c49382a246fd2ce9c799691e3c3e7175ec74b14d99e798bcddb1a/pydantic_core-2.46.3.tar.gz",
-                    "sha256": "41c178f65b8c29807239d47e6050262eb6bf84eb695e41101e62e38df4a5bc2c"
+                    "url": "https://files.pythonhosted.org/packages/9d/56/921726b776ace8d8f5db44c4ef961006580d91dc52b803c489fafd1aa249/pydantic_core-2.46.4.tar.gz",
+                    "sha256": "62f875393d7f270851f20523dd2e29f082bcc82292d66db2b64ea71f64b6e1c1"
                 },
                 "python3-pydantic-core.json"
             ]
@@ -656,13 +652,13 @@
             "name": "python3-pydantic",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app pydantic-2.13.3-py3-none-any.whl"
+                "pip3 install --prefix=/app pydantic-2.13.4-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f3/0a/fd7d723f8f8153418fb40cf9c940e82004fce7e987026b08a68a36dd3fe7/pydantic-2.13.3-py3-none-any.whl",
-                    "sha256": "6db14ac8dfc9a1e57f87ea2c0de670c251240f43cb0c30a5130e9720dc612927"
+                    "url": "https://files.pythonhosted.org/packages/fd/7b/122376b1fd3c62c1ed9dc80c931ace4844b3c55407b6fb2d199377c9736f/pydantic-2.13.4-py3-none-any.whl",
+                    "sha256": "45a282cde31d808236fd7ea9d919b128653c8b38b393d1c4ab335c62924d9aba"
                 }
             ]
         },
@@ -684,13 +680,13 @@
             "name": "python3-protobuf",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app protobuf-7.34.1-py3-none-any.whl"
+                "pip3 install --prefix=/app protobuf-7.35.0-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/88/95/608f665226bca68b736b79e457fded9a2a38c4f4379a4a7614303d9db3bc/protobuf-7.34.1-py3-none-any.whl",
-                    "sha256": "bb3812cd53aefea2b028ef42bd780f5b96407247f20c6ef7c679807e9d188f11"
+                    "url": "https://files.pythonhosted.org/packages/b8/ef/50433d346c56657a70d27f156c7b349ac59a068b01de4eb796e747eecc43/protobuf-7.35.0-py3-none-any.whl",
+                    "sha256": "c13f325cf242bad135c350629eeb5d54b24228eb472fb3e2e9ebbd4c5dc20ca0"
                 }
             ]
         },
@@ -768,13 +764,13 @@
             "name": "slixmpp-omemo",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app slixmpp_omemo-2.1.0-py3-none-any.whl"
+                "pip3 install --prefix=/app slixmpp_omemo-2.2.0-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/54/5e/f22ac5e34f1fa32b39b80ddfda27feecea2a7ebdcab7d3dd809e93cf4217/slixmpp_omemo-2.1.0-py3-none-any.whl",
-                    "sha256": "a08881a7e4400eedc4471a7d2d3b985bb5c9e1ad595fc09233ebac612f7abef3"
+                    "url": "https://files.pythonhosted.org/packages/3e/33/31f38b39738c8f3078c3eeccaaeb34c8966ddce9ee519557e63a34e576c7/slixmpp_omemo-2.2.0-py3-none-any.whl",
+                    "sha256": "ed5dade6da3ddc4956b270d6b71c36b49edb908109776096038548eee9b80dfc"
                 }
             ]
         },
@@ -782,13 +778,13 @@
             "name": "poezio-omemo",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --prefix=/app poezio_omemo-0.8.0-py3-none-any.whl"
+                "pip3 install --prefix=/app poezio_omemo-0.9.1-py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d3/6e/abcae24078047c38a171cd1a89ba30b4dc2ad5b3aeeef97d5c9227ffb313/poezio_omemo-0.8.0-py3-none-any.whl",
-                    "sha256": "a01db7c38ef5a22a1ef02a18ee110384e0be56a7406cd1cf0ecd258dd7887b2d"
+                    "url": "https://files.pythonhosted.org/packages/97/77/57fdeea889f3488c3c7b7048a60dd41a8ae482bde8760f3299191a3d819d/poezio_omemo-0.9.1-py3-none-any.whl",
+                    "sha256": "516a1cb6031d296816683de74df235e52e3e8b13b1141933c0a80cdd9a7d9267"
                 }
             ]
         }

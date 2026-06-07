@@ -1,0 +1,70 @@
+From 9ea039904587824d0984bd5ef5d8b4234b80a65a Mon Sep 17 00:00:00 2001
+From: Link Mauve <linkmauve@linkmauve.fr>
+Date: Sat, 6 Jun 2026 19:30:36 +0200
+Subject: [PATCH] appdata: add missing 0.18 release
+
+This is based on the tag, but simplified as a list.
+---
+ data/io.poez.Poezio.appdata.xml | 41 ++++++++++++++++++++++++++++++++-
+ 1 file changed, 40 insertions(+), 1 deletion(-)
+
+diff --git a/data/io.poez.Poezio.appdata.xml b/data/io.poez.Poezio.appdata.xml
+index 1a930e86..db9a3de8 100644
+--- a/data/io.poez.Poezio.appdata.xml
++++ b/data/io.poez.Poezio.appdata.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<!-- Copyright 2018-2020 Emmanuel Gil Peyrot <linkmauve@linkmauve.fr> -->
++<!-- Copyright 2018-2026 Emmanuel Gil Peyrot <linkmauve@linkmauve.fr> -->
+ <component type="console-application">
+   <id>io.poez.Poezio</id>
+   <name>Poezio</name>
+@@ -70,6 +70,45 @@
+   </provides>
+ 
+   <releases>
++    <release version="0.18" date="2026-05-25">
++      <url>https://codeberg.org/poezio/poezio/releases/tag/v0.18</url>
++      <artifacts>
++        <artifact type="source">
++          <location>https://codeberg.org/poezio/poezio/archive/v0.18.tar.gz</location>
++          <checksum type="sha256">477b13edb47d544cc2be80a8f5ef590ff9dbbada0463a877bd68cbbc0563f343</checksum>
++          <size type="download">3427337</size>
++        </artifact>
++      </artifacts>
++      <description>
++        <p>New features:</p>
++        <ul>
++          <li>Implementation of Message Retraction (XEP-0424) as the sending side.</li>
++          <li>Various improvements to the <code>react</code> plugin, notably a way to convert <code>:emoji:</code> aliases to real emojis.</li>
++          <li>Overhaul of the <code>hide_exit_join</code> option.</li>
++        </ul>
++        <p>Fixes:</p>
++        <ul>
++          <li>The API used internally for message retraction or moderation is no longer limited to the last 100 messages.</li>
++          <li>Fixed the config file handling on Guix or related distributions where the config file could actually be a symlink (in which case it produced undesired behavior).</li>
++          <li>Custom plugin and theme load should keep working on python 3.15, which removes a number of deprecated APIs in python’s <code>importlib</code>.</li>
++          <li>The <code>/xhtml</code> command had been broken for a while.</li>
++          <li>Some coroutines in the <code>admin</code> or <code>irc</code> plugin were not awaited, which broke functionality and produced unwanted errors in the output.</li>
++          <li>Fixed a traceback when receiving reactions from an unopened conversation.</li>
++          <li>Fixed a display bug in semi-anonymous rooms showing the room jid (<code>room@server/nick</code>) for users when joining/leaving, which is useless.</li>
++          <li>Fixed a case where self-ping would be disabled when the room disconnects us, instead of trying to rejoin later.</li>
++        </ul>
++        <p>Packaging:</p>
++        <ul>
++          <li>Link Mauve updated both the flatpak and the sticker-picker plugin.</li>
++          <li>Goran updated the guix package.</li>
++        </ul>
++        <p>Docs:</p>
++        <ul>
++          <li>Missing plugins documentation has been added.</li>
++        </ul>
++      </description>
++    </release>
++
+     <release version="0.17" date="2026-04-21">
+       <url>https://codeberg.org/poezio/poezio/releases/tag/v0.17</url>
+       <artifacts>
+-- 
+2.54.0
+
